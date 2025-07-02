@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Prompt user for dataset URL
+echo "Enter the URL to the dataset (.zip or .csv):"
+read url
+
+# Get the filename from the URL
+filename=$(basename "$url")
+
+# Download the file
+echo "Downloading $filename..."
+wget -q "$url" -O "$filename"
+
+# Check if download was successful
+if [[ $? -ne 0 ]]; then
+    echo "Failed to download. Please check the URL."
+    exit 1
+fi
+# Unzip if it's a .zip file
+if [[ "$filename" == *.zip ]]; then
+    echo "Unzipping $filename..."
+    unzip -o "$filename" > /dev/null
+
+    # List CSV files found
+    csv_files=($(unzip -l "$filename" | awk '/.csv/ {print $NF}'))
+    
+    echo "Found CSV file(s):"
+    for i in "${!csv_files[@]}"; do
+        echo "$((i+1)). ${csv_files[$i]}"
+    done
+else
+    csv_files=("$filename")
+fi
