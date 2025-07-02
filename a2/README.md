@@ -16,9 +16,12 @@ This script automates the process of downloading, extracting, and analyzing tabu
 ```bash
 git clone https://github.com/RShruthiCS/cs131
 cd cs131/a2
+```
 
 ### 2. Run the script:
+```bash
 ./datacollector.sh
+```
 
 ### 3. Follow the prompts:
 - Enter the URL to a dataset (e.g., UCI ZIP or CSV file)
