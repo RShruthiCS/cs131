@@ -39,16 +39,20 @@ cd cs131/a2
 ---
 
 ## 🧪 Demo
-
+```bash
 $ ./datacollector.sh
+```
+
 Enter the URL to the dataset (.zip or .csv):
 https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv
+
 Downloading...
 Found CSV file:
 1. downloaded_file.csv
 
 Enter the number of the CSV file you want to summarize:
 1
+
 You selected: downloaded_file.csv
 
 ## Feature Index and Names
