@@ -1,0 +1,33 @@
+#Q1 Output
+/home/shruthiraghavan2004
+
+#Q2 Output
+iomem
+meminfo
+cpuinfo
+
+#Q3 Output
+lsb-release
+os-release
+NAME="Ubuntu"
+VERSION="20.04.6 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.6 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+
+#Q4 Output
+13279 161.0
+12380 237.0
+11102 236.0
+
+#Q5 Output
+13200 161.0
+12905 237.0
+11242 236.0

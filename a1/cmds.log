@@ -1,0 +1,13 @@
+#Q1: Find home directory
+echo $HOME
+#Q2: Files under /proc containing memory and CPU info
+ls /proc | grep -i mem
+ls /proc | grep -i cpu
+#Q3: Files under etc containing OSVersion
+ls /etc | grep release
+cat /etc/os-release
+#Q4: Top 3 pickup locations on April 2, 2019
+cut -d',' -f2,8 2019-04.csv | grep "^\"2019-04-02" | cut -d',' -f2 | sort | uniq -c | sort -nr | head -3
+#Q5: Top 3 pickup locations on April 10, 2019
+cut -d',' -f2,8 2019-04.csv | grep "^\"2019-04-10" | cut -d',' -f2 | sort | uniq -c | sort -nr | head -3
+
