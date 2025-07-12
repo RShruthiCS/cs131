@@ -1,0 +1,32 @@
+
+Student Grade Report
+-------------------
+#This is the header for the report
+Individual Student Results:
+-------------------------
+#This section lists each student's details
+Student: Alice
+Total Score: 253
+Average: 84.33, Status: Pass
+
+Student: Bob
+Total Score: 246
+Average: 82.00, Status: Pass
+
+Student: Charlie
+Total Score: 270
+Average: 90.00, Status: Pass
+
+Student: David
+Total Score: 195
+Average: 65.00, Status: Fail
+
+Student: Eve
+Total Score: 265
+Average: 88.33, Status: Pass
+
+Summary:
+-------
+#This section summarizes the top and lwest scorers
+Highest Scoring Student: Charlie (Total: 270)
+Lowest Scoring Student: David (Total: 195)
