@@ -4,3 +4,6 @@ nano grades.csv
 nano grader.awk
 awk -f grader.awk grades.csv > a3.txt
 nano a3.txt
+git init
+git add a3/cmnd.log a3/a3.txt a3/grader.awk
+git commit -m "Assignment 3 submission"
